@@ -7,8 +7,10 @@
       else numVisits = 1; // the value for the new cookie
  
   // Show the number of visits
-      if (numVisits==1) document.write("This is your first visit.");
-      else document.write("You have visited this page " + numVisits + " times.");
+      //if (numVisits==1) document.write("This is your first visit.");
+      //else document.write("You have visited this page " + numVisits + " times.");
+      if (numVisits==1) document.write("");
+      else document.write(numVisits);
  
   // Set the cookie to expire 365 days from now
       var today = new Date();
