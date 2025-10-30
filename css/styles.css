@@ -11097,6 +11097,9 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
+  font-size: clamp(1.75rem, 6vw, 4rem);
+  word-wrap: break-word;
+  white-space: normal;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -11128,6 +11131,21 @@ body {
   }
 }
 
+/* Reduce letter-spacing on small screens */
+@media (max-width: 576px) {
+  .masthead {
+    padding: 8rem 0;              /* less vertical padding on phones */
+    min-height: 24rem;
+  }
+  .masthead h1 {
+    letter-spacing: 0.2rem;       /* was 0.8rem — this is the main fix */
+    line-height: 1.15;            /* more breathing room */
+    font-size: clamp(1.75rem, 8vw, 3rem);
+  }
+  .masthead h2 {
+    max-width: 24rem;             /* allow a bit more width on phones */
+  }
+}
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
