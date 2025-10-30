@@ -609,11 +609,22 @@ progress {
   height: auto;
 }
 
+/* Reset for all screens */
 .img-science {
-  max-width: 59%;
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
   height: auto;
-  margin-left: 7rem;
 }
+
+/* Apply your custom offset and smaller width only for desktops */
+@media (min-width: 992px) {
+  .img-science {
+    max-width: 59%;
+    margin-left: 7rem;
+  }
+}
+
 
 .img-portrait{
   max-width: 300px;
@@ -11141,11 +11152,12 @@ body {
 @media (max-width: 991.98px) {
   body { padding-top: 56px; }          /* pushes everything down */
   #mainNav { background:#fff; }        /* your white bar */
+
 }
 
 
 /* Reduce letter-spacing on small screens */
-@media (max-width: 576px) {
+@media (max-width: 991.98px) {
   .masthead {
     padding: 8rem 0;              /* less vertical padding on phones */
     min-height: 24rem;
@@ -11163,6 +11175,9 @@ body {
   }
   .image-cycle{
 	  margin: 1.5rem 0;
+  }
+  .about-section {
+	  padding-top: 20rem;
   }
 }
 .about-section {
