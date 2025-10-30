@@ -11136,6 +11136,14 @@ body {
   }
 }
 
+/* Move page under the nav bar on small screens */
+/* collapsed navbar height (Bootstrap ~56px) */
+@media (max-width: 991.98px) {
+  body { padding-top: 56px; }          /* pushes everything down */
+  #mainNav { background:#fff; }        /* your white bar */
+}
+
+
 /* Reduce letter-spacing on small screens */
 @media (max-width: 576px) {
   .masthead {
@@ -11143,7 +11151,7 @@ body {
     min-height: 24rem;
   }
   .masthead h1 {
-    letter-spacing: 0.25rem;       /* was 0.8rem — this is the main fix */
+    letter-spacing: 0.3rem;       /* was 0.8rem — this is the main fix */
     line-height: 1.15;            /* more breathing room */
     font-size: clamp(1.75rem, 8vw, 3rem);
   }
