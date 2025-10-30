@@ -537,6 +537,9 @@ progress {
   .display-4 {
     font-size: 3.5rem;
   }
+  .img-cycle {
+	  max-width: 500px
+  }
 }
 
 .display-5 {
@@ -618,8 +621,10 @@ progress {
 }
 
 .img-cycle {
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .img-thumbnail {
@@ -11138,12 +11143,18 @@ body {
     min-height: 24rem;
   }
   .masthead h1 {
-    letter-spacing: 0.2rem;       /* was 0.8rem — this is the main fix */
+    letter-spacing: 0.25rem;       /* was 0.8rem — this is the main fix */
     line-height: 1.15;            /* more breathing room */
     font-size: clamp(1.75rem, 8vw, 3rem);
   }
   .masthead h2 {
     max-width: 24rem;             /* allow a bit more width on phones */
+  }
+  #mainNav {i
+	  background: #fff 
+  }
+  .image-cycle{
+	  margin: 1.5rem 0;
   }
 }
 .about-section {
@@ -11173,6 +11184,9 @@ body {
   font-size: 90%;
 }
 @media (min-width: 992px) {
+	.img-cycle {
+		max-width: 650px
+	}
   .projects-section .project-text {
     padding: 1rem;
   }
