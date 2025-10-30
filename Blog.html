@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Andrij Vasylenko</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Counter -->
+        <script src="js/counter.js"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Andrij Vasylenko</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#projects">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="SelectedProjects.html">Selected Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Blog.html">Perspectives</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+			    <h1 class="mx-auto my-0 text-uppercase">Perspectives</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        </section>
+        <!-- Projects-->
+
+ <section class="bg-white text-black-50">
+<div class="container px-4 px-lg-5">
+	    <p> <br></p>
+	    <h2>Expert-supervised-AI Cycle from Hypothesis to Real-World Materials Discovery </h2>
+	    <p> <br></p>
+                <!-- Two-column layout for essay text -->
+            <div class="row">
+		<div class="col-lg-6">
+			<p>A vision of AI in materials science promises discoveries on an unprecedented scale. With algorithms now capable of generating thousands of candidate compositions, breakthroughs in superconductors, next-generation batteries, or water-splitting catalysts feel closer than ever. Yet a growing danger lies in science being drawn into a maze of digital possibilities — predictions that dazzle on screen but risk leading to nominal advances and neglected experimental insight.
+
+			To ensure genuine progress, computational proposals must operate within a cycle of hypothesis, expert scrutiny, and experimental validation, balancing abstract predictions with the realities of chemistry, stability, and application. By treating AI’s output as provisional guidance rather than prescribed outcome, we can establish a human–AI discovery workflow that leverages digital tools<sup>1–4</sup> to navigate the complexity of materials space (Figure 1).</p>
+                </div>
+	    <div class="col-lg-6">
+		    <p>In inorganic materials science, decades of mineralogical and synthetic research have yielded more than 200,000 experimentally verified structures<sup>5</sup>. This collection forms the foundation of most AI applications in the field — from exploring elemental substitutions to predicting functional properties<sup>6</sup>. Yet, extensive as it is, this dataset constrains modeling efforts and can bias algorithms toward familiar patterns. This reemphasizes the importance of expert judgment and experimental validation to ensure that AI-assisted discovery extends knowledge rather than merely reproduces it.
+
+		    Elemental substitution within known compositions and structures is a long-established design strategy and a convenient starting point for AI modeling<sup>7</sup>. However, this “design by analogy” depends on prior discoveries of parent materials. Its evolutionary nature often leads to incremental modifications rather than truly novel structures or properties<sup>8,9</sup>.</p>
+	    </div>
+           </div>
+
+            <!-- Centered image in a single column -->
+            <div class="row justify-content-center my-4">
+                <div class="col-12 text-center">
+		        <img class="img-cycle" src="assets/img/SA.png" alt="AI-Expert Materials Discovery Cycle">
+                	<div class="figure-caption">Figure 1. AI-Expert Materials Discovery Cycle: Integrating AI, expert knowledge, and experimental validation to accelerate materials discovery<br>.</div>
+                	</div>
+            </div>
+
+            <!-- Continue essay after the image (optional) -->
+            <div class="row">
+                <div class="col-lg-6">
+			<style>
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+</style>
+			<p> To explore beyond this foundational dataset, we developed tools to evaluate the synthetic accessibility and chemical novelty of previously uncharted combinations of elements — ultimately addressing a core question of chemistry: “How to choose?”<sup>1</sup>. Leveraging a variational autoencoder (VAE) for unsupervised pattern recognition in a high-dimensional chemical space, we rank hypothetical elemental combinations by similarity to known compounds, thereby guiding attention toward promising yet unexplored regions
+			VAE-selected systems can then be prioritized for functionality through explainable AI (XAI), which reveals links between element choice and anticipated material properties<sup>10</sup>. With domain expertise, this process can be directed toward practical targets — for example, combinations of lithium, one frame-forming metal, and two anions with geometries favorable for ionic mobility. Such reasoning led to the hypothesis and subsequent experimental discovery of a novel superionic conductor, Li<sub>7</sub>Si<sub>2</sub>S<sub>7</sub>I (LSSI)<sup>3</sup>.</p>
+			<p>Exploration of compositional space via crystal structure prediction (CSP) typically relies on quantum-mechanical calculations and unit-cell approximations, which constrain searches to stoichiometries expressible as small integer ratios of atoms. To access the traditionally “incomputable” regions between these points, we hypothesized a continuous energy–composition relationship and applied AI-guided (Bayesian optimization) to target structures offering the greatest informational gain<sup>2</sup>.
+
+			The resulting energy–composition maps identify near-stable compositions at a fraction of the computational cost, focusing experimental efforts on the most promising chemical regions. At this stage, expert supervision closes the discovery loop: domain knowledge filters AI suggestions through mechanistic reasoning — for instance, prioritizing systems with anion-size asymmetry as a design rule for superionic conduction. Guided by this insight, we selected the S–I system from among several VAE-ranked candidates (Li–Si–S–Cl, Li–Si–S–Br, Li–Si–S–I), leading to the synthesis of LSSI<sup>3</sup>. </p>
+                </div>
+
+                <div class="col-lg-6">
+
+			<p>Newly discovered materials can serve as prototypes for subsequent optimization. In LSSI’s case, substitution or doping strategies can be directed by statistical and AI-based analyses of local geometric motifs<sup>11</sup>. This optimization stage produced Li<sub>7</sub>Si<sub>2–x</sub>Ge<sub>x</sub>S<sub>7</sub>I, where partial Ge substitution enhances Li conductivity at lower temperatures — an outcome of both AI guidance and expert experimental intuition<sup>4</sup>.</p>
+
+
+    <p>Materials discovery increasingly benefits from the synergy between human expertise and AI tools, which together expand our capacity to tackle the complexity and scale of materials science. Emerging methods - including generative models, large language models, and high-throughput simulations — offer exciting opportunities for scientific acceleration that align with societal and industrial needs.
+
+Yet, dedicating vast resources to these tools alone does not ensure progress; without careful guidance, such approaches risk prioritizing numerical patterns over genuine scientific understanding. This highlights the enduring importance of expert supervision and the development of explainable AI to interpret predictions and reveal underlying principles.
+
+As XAI matures and fosters transparent hypothesis exchange within multi-agent discovery loops, materials research can evolve into a truly collaborative process — one that reshapes both scientific understanding and real-world innovation.</p>
+
+    <div class="references">
+        <h3>References</h3>
+        <ol>
+            <li>Vasylenko A., Gamon J., et al. <em>Nat. Commun.</em> 2021; 12(1):5561.</li>
+            <li>Vasylenko A., Asher B.M., et al. <em>J. Chem. Phys.</em> 2024; 160(5):054110.</li>
+            <li>Han G., Vasylenko A., Daniels L.M., et al. <em>Science</em> 2024; 383(6684):739.</li>
+            <li>Han G., Daniels L.M., Vasylenko A., et al. <em>Angew. Chem. Int. Ed. </em> 2024; 67(37):e202409372.</li>
+            <li>Zagorac D., Müller H., et al. <em>J. Appl. Cryst.</em> 2019; 52(5):918.</li>
+            <li>Agrawal A., Choudhary A. <em>APL Mater.</em> 2016; 4(5):053208.</li>
+            <li>Merchant A., Batzner S., et al. <em>Nature</em> 2023; 624(7990):80.</li>
+            <li>Cheetham A.K., Seshadri R. <em>Chem. Mater.</em> 2024; 36(8):3490.</li>
+            <li>Antypov D., Antypov D., et. al.  <em>Acc. Chem. Res.</em> 2025; 58(9):1355.</li>
+            <li>Vasylenko A., Antypov D., et al. <em>NPJ Comput. Mater.</em> 2023; 9(1):1.</li>
+	    <li>Vasylenko A., Antypov D., et al. <em>Digit. Discov.</em> 2025; 4(2):477.</li>
+        </ol>
+    </div>
+            </div>
+            </div>
+    </div>
+    </div>
+</section>
+    <!-- Next story
+ <section class="bg-dark text-white-50">
+    <div class="container px-4 px-lg-5">
+	                <p> <br></p>
+            <h2>Expert-supervised-AI Cycle from Hypothesis to Real-World Materials Discovery </h2>
+            <p> <br></p>
+    </div>
+ </section>-->
+
+         <!-- Contact-->
+ 	<section class="contact-section bg-black" id="contact">
+ 		<div class="col-md-10 col-lg-8 mx-auto text-center">
+ 		<!--<h5 class="text-white mb-5">For the full list of projects and for collaboration, <br> check out these resources and please get in touch</h5>-->
+                         </div>
+ 
+                 <div class="social d-flex justify-content-center">
+                     <!--a class="mx-2" href="https://scholar.google.com/citations?user=K2d-7k8AAAAJ&hl=en"><i class="fab fa-google"></i></a-->
+                     <a class="mx-2" href="https://scholar.google.com/citations?user=K2d-7k8AAAAJ&hl=en" target="_blank" rel="noopener">
+ 			    <i class="ai ai-google-scholar ai-2x" style="vertical-align:-6px;"></i></a>
+                     <a class="mx-2" href="https://www.linkedin.com/in/andrij-vasylenko-42125b10b/"><i class="fab fa-linkedin"></i></a>
+ 		    <!--                    <a class="mx-2" href="https://github.com/lrcfmd"><i class="fab fa-github"></i></a>-->
+
+                    <!--a class="mx-2 btn btn-outline-light btn-sm"-->
+		    <a class="mx-2 btn btn-outline-light btn-sm d-flex align-items-center justify-content-center"
+                        href="assets/Andrij_Vasylenko_CV.pdf"
+                        target="_blank"
+                        rel="noopener"
+			style="border-radius: 20px; padding: 4px 12px; line-height: 1; font-size: 18px; font-weight: 300; vertical-align: middle;">
+                        CV
+                    </a>
+                 </div>
+             </div>
+         </section>
+         <!-- Footer-->
+         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; andrivasylenko.github.io 2025</div></footer>
+         <!-- Counter-->
+ 	<script language="javascript">DisplayVisits()</script>
+         <!-- Bootstrap core JS-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- Core theme JS-->
+         <script src="js/scripts.js"></script>
+         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+         <!-- * *                               SB Forms JS                               * *-->
+         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+ 	<!--<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
+     </body>
+ </html>
