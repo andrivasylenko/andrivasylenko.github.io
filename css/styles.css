@@ -1499,6 +1499,12 @@ progress {
     flex: 0 0 auto;
     width: 58.33333333%;
   }
+  @media (max-width: 568px) {
+  .col-xl-7{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
   .col-xl-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
@@ -11155,7 +11161,14 @@ body {
 
 }
 
-
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  padding-bottom: 5rem;
+}
+.about-section {
+  margin-bottom: 5rem;
+}
 /* Reduce letter-spacing on small screens */
 @media (max-width: 991.98px) {
   .masthead {
@@ -11177,16 +11190,8 @@ body {
 	  margin: 1.5rem 0;
   }
   .about-section {
-	  padding-top: 20rem;
+	  padding-top: 16rem;
   }
-}
-.about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-  padding-bottom: 5rem;
-}
-.about-section p {
-  margin-bottom: 5rem;
 }
 
 .projects-section {
@@ -11214,6 +11219,16 @@ body {
     padding: 1rem;
   }
 }
+
+@media (max-width: 576px) {
+  .projects-section .featured-text,
+  .projects-section .project-text {
+    padding: 1rem;           /* reduce padding to use more space */
+    margin-right: 0;         /* remove extra right margin */
+    text-align: justify;     /* justify text instead of left-aligning */
+  }
+  }
+
 
 .signup-section {
   padding: 5rem 0;
